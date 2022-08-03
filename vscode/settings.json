@@ -1,0 +1,49 @@
+{
+    "editor.fontSize": 13,
+    "editor.lineHeight": 16,
+    "editor.trimAutoWhitespace": false,
+    "editor.fontWeight": "normal",
+    "editor.minimap.enabled": false,
+    "editor.glyphMargin": false,
+    
+    "C_Cpp.default.cppStandard": "c++17",
+    "C_Cpp.default.intelliSenseMode": "gcc-x64",
+    "C_Cpp.default.defines": ["BIZON"],
+    "C_Cpp.intelliSenseCacheSize": 0,
+    "C_Cpp.intelliSenseUpdateDelay": 500,
+    "C_Cpp.errorSquiggles": "Disabled",
+    
+    "code-runner.saveAllFilesBeforeRun": true,
+    "code-runner.runInTerminal": false,
+    "code-runner.executorMap": {
+        "cpp": "~/Compile/olymp-stuff/cpp/cpprunner.sh $dir $fileNameWithoutExt ~/Compile/run",
+        "python": "python3 -u"
+    },
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.ignoreSelection": true,
+    
+    "workbench.activityBar.visible": false,
+    "workbench.colorTheme": "Nord",
+    
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.snippetSuggestions": "top",
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": false,
+    },
+    "editor.quickSuggestionsDelay": 0,
+    "editor.insertSpaces": false,
+    
+    "git.autofetch": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "diffEditor.ignoreTrimWhitespace": false,
+    
+    "cph.general.defaultLanguage": "cpp",
+    "cph.general.ignoreSTDERROR": true,
+    "cph.general.timeOut": 5000,
+    "cph.general.useShortCodeForcesName": true,
+    "cph.general.autoShowJudge": false,
+    "cph.language.cpp.Command": "g++",
+    "cph.language.cpp.Args": "-std=c++17 -O2 -fconcepts-ts -Wno-literal-suffix -Werror=uninitialized -Werror=init-self -Werror=return-type -Werror=reorder"
+}
