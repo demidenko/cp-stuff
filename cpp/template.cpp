@@ -24,7 +24,7 @@ void run_case(const size_t ____case) { // rr(____case)
 }
 
 int main() {
-	if(auto f="in.txt"; fopen(f,"r") && freopen(f,"r",stdin));
+	if(auto f="in.txt"; fopen(f,"r")) freopen(f,"r",stdin);
 	cin.tie(0)->sync_with_stdio(0);
 	
 	size_t tn = 1; //cin>>tn;
