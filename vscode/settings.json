@@ -1,6 +1,6 @@
 {
-    "editor.fontSize": 13,
-    "editor.lineHeight": 16,
+    "editor.fontSize": 14,
+    "editor.lineHeight": 17,
     "editor.trimAutoWhitespace": false,
     "editor.fontWeight": "normal",
     "editor.minimap.enabled": false,
@@ -11,7 +11,7 @@
     "C_Cpp.default.defines": ["BIZON"],
     "C_Cpp.intelliSenseCacheSize": 0,
     "C_Cpp.intelliSenseUpdateDelay": 500,
-    "C_Cpp.errorSquiggles": "Disabled",
+    "C_Cpp.errorSquiggles": "disabled",
     
     "code-runner.saveAllFilesBeforeRun": true,
     "code-runner.runInTerminal": false,
@@ -45,5 +45,5 @@
     "cph.general.useShortCodeForcesName": true,
     "cph.general.autoShowJudge": false,
     "cph.language.cpp.Command": "g++",
-    "cph.language.cpp.Args": "-std=c++17 -O2 -fconcepts-ts -Wno-literal-suffix -Werror=uninitialized -Werror=init-self -Werror=return-type -Werror=reorder"
+    "cph.language.cpp.Args": "-std=c++17 -O2 -fconcepts-ts -Werror=uninitialized -Werror=init-self -Werror=return-type -Werror=reorder -Werror=shadow"
 }
