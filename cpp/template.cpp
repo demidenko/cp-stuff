@@ -6,15 +6,15 @@ template<class T,class S=T>inline bool umax(T&m,S&&x){return m<x?m=x,1:0;}
 auto operator<<(ostream&o,auto&&v)->enable_if_t<!is_constructible_v<string,decltype(v)>,decltype(o<<*end(v))>{int f=0,u=&o==&cerr&&o<<"[";for(auto&&x:v)(f++?o<<", "+!u:o)<<x;return u?o<<"]":o;}
 auto operator<<(ostream&o,auto&&t)->decltype(o<<get<0>(t)){int f=0,u=&o==&cerr&&o<<"<";apply([&](auto&...x){(((f++?o<<", "+!u:o)<<x),...);},t);return u?o<<">":o;}
 #ifdef BIZON
-	#define rr(...) [](auto&&...x){ cerr << boolalpha << "\e[1;38;5;68m" << #__VA_ARGS__ << " "; int _=0; ((cerr<<"\e[0;38;5;61m"<<",="[!_++]<<"\e[0m "<<x),...)<<endl; }(__VA_ARGS__);
+	#define rr(v...) [](auto&&...x){ cerr << boolalpha << "\e[1;38;5;68m" << #v << " "; int _=0; ((cerr<<"\e[0;38;5;61m"<<",="[!_++]<<"\e[0m "<<x),...)<<endl; }(v);
 #else
 	#define rr(...) ;
 	#define endl '\n'
 #endif
 #define bb(c) begin(c), end(c)
-#define ff(T, name, ...) function<T(__VA_ARGS__)> name = [&](__VA_ARGS__)->T
-#define jj(...) __VA_ARGS__; [](auto&...x){(cin>>...>>x);}(__VA_ARGS__);
-#define ii(...) int jj(__VA_ARGS__)
+#define ff(T, name, args...) function<T(args)> name = [&](args)->T
+#define jj(v...) v; [](auto&...x){(cin>>...>>x);}(v);
+#define ii(v...) int jj(v)
 using ll = long long;
 
 
