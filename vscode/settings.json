@@ -45,5 +45,5 @@
     "cph.general.useShortCodeForcesName": true,
     "cph.general.autoShowJudge": false,
     "cph.language.cpp.Command": "g++",
-    "cph.language.cpp.Args": "-std=c++17 -O2 -fconcepts-ts -Werror=uninitialized -Werror=init-self -Werror=return-type -Werror=reorder -Werror=shadow"
+    "cph.language.cpp.Args": "-std=c++17 -O2 -fconcepts-ts -Werror=uninitialized -Werror=init-self -Werror=return-type -Werror=reorder"
 }
