@@ -3,8 +3,8 @@ using namespace std;
 template<class T,T Q=2>constexpr T inf=numeric_limits<T>::max()/Q-1;
 template<class T,class S=T>inline bool umin(T&m,S&&x){return x<m?m=x,1:0;}
 template<class T,class S=T>inline bool umax(T&m,S&&x){return m<x?m=x,1:0;}
-auto operator<<(ostream&o,auto&&v)->enable_if_t<!is_constructible_v<string,decltype(v)>,decltype(o<<*end(v))>{int f=0,u=&o!=&cerr;o<<"["+u;for(auto&&x:v)(f++?o<<", "+u:o)<<x;return o<<"]"+u;}
-auto operator<<(ostream&o,auto&&t)->decltype(o<<get<0>(t)){int f=0,u=&o!=&cerr;o<<"<"+u;apply([&](auto&...x){(((f++?o<<", "+u:o)<<x),...);},t);return o<<">"+u;}
+auto&operator<<(ostream&o,ranges::range auto&&r)requires(!requires{string{r};}){int f=0,u=&o!=&cerr;o<<"["+u;for(auto&&x:r)(f++?o<<", "+u:o)<<x;return o<<"]"+u;}
+auto&operator<<(ostream&o,auto&&t)requires requires{tuple_cat(t);}{int f=0,u=&o!=&cerr;o<<"<"+u;apply([&](auto&...x){(((f++?o<<", "+u:o)<<x),...);},t);return o<<">"+u;}
 #ifdef BIZON
 	#define rr(v...) [](auto&&...x){ cerr << boolalpha << "\e[1;38;5;68m" << #v << " "; int _=0; ((cerr<<"\e[0;38;5;61m"<<",="[!_++]<<"\e[0m "<<x),...)<<endl; }(v);
 #else
