@@ -12,7 +12,7 @@ if ! $(test -f $file.cpp) || ! $(cmp -s $path$file.cpp $file.cpp)
 then
     echo compiling... $path$file.cpp
     
-    if ! g++ $path$file.cpp -o$file -DBIZON -std=c++17 -O2 -fconcepts-ts -Werror=uninitialized -Werror=init-self -Werror=return-type -Werror=reorder
+    if ! g++ $path$file.cpp -o$file -DBIZON -std=c++20 -O2 -Werror=uninitialized -Werror=init-self -Werror=return-type -Werror=reorder
     then 
         echo compilation failed
         exit 0
