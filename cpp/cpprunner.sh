@@ -15,6 +15,7 @@ then
     if ! g++ $path$file.cpp -o$file -DBIZON -std=c++20 -O2 -Werror=uninitialized -Werror=init-self -Werror=return-type -Werror=reorder -Werror=parentheses
     then 
         echo compilation failed
+        rm $file.cpp
         exit 0
     fi
     
@@ -22,7 +23,7 @@ then
     cp $path$file.cpp $file.cpp
 fi
 
-echo run $2 in $rundir
+echo run $file in $rundir
 
 cd $path
 ulimit -s  524288   #512Mb stack
