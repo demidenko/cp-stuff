@@ -48,7 +48,7 @@
     "cph.general.useShortCodeForcesName": true,
     "cph.general.autoShowJudge": false,
     "cph.language.cpp.Command": "g++",
-    "cph.language.cpp.Args": "-std=c++20 -O2 -Werror=uninitialized -Werror=init-self -Werror=return-type -Werror=reorder -Werror=parentheses",
+    "cph.language.cpp.Args": "-std=c++20 -O2",
     
     
     //colors theme: Nord + Nord Deep
