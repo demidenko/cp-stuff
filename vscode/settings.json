@@ -34,13 +34,17 @@
     "C_Cpp.errorSquiggles": "disabled",
     
     "code-runner.saveAllFilesBeforeRun": true,
-    "code-runner.runInTerminal": false,
     "code-runner.executorMap": {
         "cpp": "~/compile/olymp-stuff/cpp/cpprunner.sh $dir $fileNameWithoutExt ~/compile/run",
         "python": "python3 -u"
     },
-    "code-runner.clearPreviousOutput": true,
     "code-runner.ignoreSelection": true,
+    //"code-runner.clearPreviousOutput": true,
+    "code-runner.runInTerminal": true,
+    "terminal.integrated.env.linux": {
+        "GTK_PATH": null,
+        "GIO_MODULE_DIR": null
+    },
     
     "cph.general.defaultLanguage": "cpp",
     "cph.general.ignoreSTDERROR": true,
