@@ -1,7 +1,7 @@
 import json, os
 
 snippets_file = os.path.expanduser("~/.config/Code/User/snippets/cpp.json")
-lib_path = os.path.expanduser("~/Compile/olymp-cpp-lib")
+lib_path = os.path.expanduser("~/compile/olymp-cpp-lib")
 
 def load_snippets():
 	f = open(snippets_file, 'r')
