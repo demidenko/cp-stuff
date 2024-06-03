@@ -15,6 +15,17 @@
     
     "security.workspace.trust.untrustedFiles": "open",
     
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.snippetSuggestions": "top",
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": false
+    },
+    "editor.quickSuggestionsDelay": 0,
+    "editor.insertSpaces": false,
+    
+    
     "C_Cpp.default.cppStandard": "c++17",
     "C_Cpp.default.intelliSenseMode": "gcc-x64",
     "C_Cpp.default.defines": ["BIZON"],
@@ -30,16 +41,6 @@
     },
     "code-runner.clearPreviousOutput": true,
     "code-runner.ignoreSelection": true,
-    
-    "editor.acceptSuggestionOnCommitCharacter": false,
-    "editor.snippetSuggestions": "top",
-    "editor.quickSuggestions": {
-        "other": true,
-        "comments": false,
-        "strings": false,
-    },
-    "editor.quickSuggestionsDelay": 0,
-    "editor.insertSpaces": false,
     
     "cph.general.defaultLanguage": "cpp",
     "cph.general.ignoreSTDERROR": true,
@@ -66,7 +67,7 @@
             "editorBracketHighlight.foreground4": "#5e81ac",
             "editorBracketHighlight.foreground5": "#8fbcbb",
             "editorBracketHighlight.foreground6": "#88c0d0",
-            "editorBracketHighlight.unexpectedBracket.foreground": "#bf616a",
+            "editorBracketHighlight.unexpectedBracket.foreground": "#bf616a"
         }
     }
 }
