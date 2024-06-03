@@ -10,6 +10,11 @@
     //"workbench.activityBar.visible": false,
     "workbench.startupEditor": "none",
     
+    "git.autofetch": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    
+    "security.workspace.trust.untrustedFiles": "open",
+    
     "C_Cpp.default.cppStandard": "c++17",
     "C_Cpp.default.intelliSenseMode": "gcc-x64",
     "C_Cpp.default.defines": ["BIZON"],
@@ -35,10 +40,6 @@
     },
     "editor.quickSuggestionsDelay": 0,
     "editor.insertSpaces": false,
-    
-    "git.autofetch": true,
-    "security.workspace.trust.untrustedFiles": "open",
-    "diffEditor.ignoreTrimWhitespace": false,
     
     "cph.general.defaultLanguage": "cpp",
     "cph.general.ignoreSTDERROR": true,
