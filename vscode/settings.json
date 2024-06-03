@@ -7,7 +7,7 @@
     "editor.minimap.enabled": false,
     "editor.glyphMargin": false,
     
-    //"workbench.activityBar.visible": false,
+    "workbench.activityBar.location": "top",
     "workbench.startupEditor": "none",
     
     "git.autofetch": true,
