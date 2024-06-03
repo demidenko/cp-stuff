@@ -1,10 +1,14 @@
 {
     "editor.fontSize": 14,
     "editor.lineHeight": 17,
-    "editor.trimAutoWhitespace": false,
     "editor.fontWeight": "normal",
+    
+    "editor.trimAutoWhitespace": false,
     "editor.minimap.enabled": false,
     "editor.glyphMargin": false,
+    
+    //"workbench.activityBar.visible": false,
+    "workbench.startupEditor": "none",
     
     "C_Cpp.default.cppStandard": "c++17",
     "C_Cpp.default.intelliSenseMode": "gcc-x64",
@@ -21,9 +25,6 @@
     },
     "code-runner.clearPreviousOutput": true,
     "code-runner.ignoreSelection": true,
-    
-    "workbench.activityBar.visible": false,
-    "workbench.colorTheme": "Nord",
     
     "editor.acceptSuggestionOnCommitCharacter": false,
     "editor.snippetSuggestions": "top",
@@ -45,5 +46,26 @@
     "cph.general.useShortCodeForcesName": true,
     "cph.general.autoShowJudge": false,
     "cph.language.cpp.Command": "g++",
-    "cph.language.cpp.Args": "-std=c++17 -O2 -fconcepts-ts -Werror=uninitialized -Werror=init-self -Werror=return-type -Werror=reorder"
+    "cph.language.cpp.Args": "-std=c++17 -O2 -fconcepts-ts -Werror=uninitialized -Werror=init-self -Werror=return-type -Werror=reorder",
+    
+    
+    //colors theme: Nord + Nord Deep
+    "workbench.colorTheme": "Nord Deep",
+    "editor.tokenColorCustomizations": {
+        "[Nord Deep]": {
+            "numbers": "#b48ead" //from classic nord
+        }
+    },
+    "workbench.colorCustomizations": {
+        "[Nord Deep]": {
+            //https://github.com/nordtheme/visual-studio-code/blob/8ead09822c02d0d49d0f764104505e5a34d3689f/themes/nord-color-theme.json#L82-L88
+            "editorBracketHighlight.foreground1": "#8fbcbb",
+            "editorBracketHighlight.foreground2": "#88c0d0",
+            "editorBracketHighlight.foreground3": "#81a1c1",
+            "editorBracketHighlight.foreground4": "#5e81ac",
+            "editorBracketHighlight.foreground5": "#8fbcbb",
+            "editorBracketHighlight.foreground6": "#88c0d0",
+            "editorBracketHighlight.unexpectedBracket.foreground": "#bf616a",
+        }
+    }
 }
