@@ -26,7 +26,7 @@
     "editor.insertSpaces": false,
     
     
-    "C_Cpp.default.cppStandard": "c++17",
+    "C_Cpp.default.cppStandard": "c++20",
     "C_Cpp.default.intelliSenseMode": "gcc-x64",
     "C_Cpp.default.defines": ["BIZON"],
     "C_Cpp.intelliSenseCacheSize": 0,
@@ -36,7 +36,7 @@
     "code-runner.saveAllFilesBeforeRun": true,
     "code-runner.runInTerminal": false,
     "code-runner.executorMap": {
-        "cpp": "~/Compile/olymp-stuff/cpp/cpprunner.sh $dir $fileNameWithoutExt ~/Compile/run",
+        "cpp": "~/compile/olymp-stuff/cpp/cpprunner.sh $dir $fileNameWithoutExt ~/compile/run",
         "python": "python3 -u"
     },
     "code-runner.clearPreviousOutput": true,
@@ -48,7 +48,7 @@
     "cph.general.useShortCodeForcesName": true,
     "cph.general.autoShowJudge": false,
     "cph.language.cpp.Command": "g++",
-    "cph.language.cpp.Args": "-std=c++17 -O2 -fconcepts-ts -Werror=uninitialized -Werror=init-self -Werror=return-type -Werror=reorder",
+    "cph.language.cpp.Args": "-std=c++20 -O2 -Werror=uninitialized -Werror=init-self -Werror=return-type -Werror=reorder -Werror=parentheses",
     
     
     //colors theme: Nord + Nord Deep
