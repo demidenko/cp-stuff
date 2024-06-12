@@ -6,13 +6,18 @@ file=$2
 rundir=$3"/"
 
 
+warnings=("uninitialized" "init-self" "return-type" "reorder" "parentheses")
+werrors=""
+for warning in ${warnings[*]}; do werrors="${werrors} -Werror=${warning}"; done
+
+
 cd $rundir
 
 if ! $(test -f $file.cpp) || ! $(cmp -s $path$file.cpp $file.cpp)
 then
     echo compiling... $path$file.cpp
     
-    if ! g++ $path$file.cpp -o$file -DBIZON -std=c++20 -O2 -Werror=uninitialized -Werror=init-self -Werror=return-type -Werror=reorder -Werror=parentheses
+    if ! g++ $path$file.cpp -o$file -DBIZON -std=c++20 -O2 $werrors
     then 
         echo compilation failed
         rm $file.cpp
