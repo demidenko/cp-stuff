@@ -5,11 +5,14 @@ path=$1"/"
 file=$2
 rundir=$3"/"
 
-
+compiler="g++"
+standard=20
 warnings=("uninitialized" "init-self" "return-type" "reorder" "parentheses")
+
 werrors=""
 for warning in ${warnings[*]}; do werrors="${werrors} -Werror=${warning}"; done
 
+compiler_args="-O2 -std=c++$standard $werrors -DBIZON"
 
 cd $rundir
 
@@ -17,7 +20,7 @@ if ! $(test -f $file.cpp) || ! $(cmp -s $path$file.cpp $file.cpp)
 then
     echo compiling... $path$file.cpp
     
-    if ! g++ $path$file.cpp -o$file -DBIZON -std=c++20 -O2 $werrors
+    if ! $compiler $path$file.cpp -o$file $compiler_args
     then 
         echo compilation failed
         rm $file.cpp
