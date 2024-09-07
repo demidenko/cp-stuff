@@ -37,10 +37,11 @@ cd $path
 ulimit -s  524288   #512Mb stack
 ulimit -Sv 10000000  #~10Gb memory
 
-unset GTK_PATH
+#unset GTK_PATH
 
 #xterm -bg "#333333" -fg "#f2f2f2" -geometry 80x25+800+400 -e \
-gnome-terminal --title="$file.cpp" --geometry 80x25+800+400 -- \
+#gnome-terminal --title="$file.cpp" --geometry 80x25+800+400 -- \
+konsole -e \
     bash -c '/usr/bin/time --format="\nused time:\t%U seconds\nused mem:\t%M Kb\n%x"  "'$rundir$file'" ; read'
 
 #Hello world!
