@@ -35,7 +35,7 @@ echo run $file in $rundir
 
 cd $path
 ulimit -s  524288   #512Mb stack
-ulimit -Sv 10000000  #~10Gb memory
+#ulimit -Sv 10000000  #~10Gb memory
 
 #unset GTK_PATH
 
