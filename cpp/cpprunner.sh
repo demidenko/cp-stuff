@@ -23,7 +23,10 @@ then
     if ! $compiler $path$file.cpp -o$file $compiler_args
     then 
         echo compilation failed
-        rm $file.cpp
+        if $(test -f $file.cpp)
+        then
+            rm $file.cpp
+        fi
         exit 0
     fi
     
@@ -34,8 +37,8 @@ fi
 echo run $file in $rundir
 
 cd $path
-ulimit -s  524288   #512Mb stack
-#ulimit -Sv 10000000  #~10Gb memory
+ulimit -s 524288   #512Mb stack limit
+ulimit -Sv $((1024*1024*16))  #16Gb memory limit
 
 #unset GTK_PATH
 
