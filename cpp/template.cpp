@@ -16,10 +16,10 @@ auto&operator<<(ostream&o,ranges::range auto&&r)requires(!requires{string{r};}){
 #define ee(e) [&](auto&&it) { return e; }
 #define jj(v...) v; [](auto&...x){(cin>>...>>x);}(v);
 #define ii(v...) int jj(v)
-using ll = decltype(1LL);
+using ll = decltype(1ll);
 
 
-void run_case(const size_t ____case) { // rr(____case)
+void run_case() {
 	
 	
 }
@@ -28,8 +28,8 @@ int main() {
 	if(auto f="in.txt"; fopen(f,"r") && freopen(f,"r",stdin));
 	cin.tie(0)->sync_with_stdio(0);
 	
-	size_t tn = 1; //cin>>tn;
-	for(size_t t=1; t<=tn; ++t) run_case(t);
+	int t = 1; // cin >> t;
+	while(t-- > 0) run_case();
 	
 	return 0;
 }
