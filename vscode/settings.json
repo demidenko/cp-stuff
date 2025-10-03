@@ -2,6 +2,7 @@
     "editor.fontSize": 14,
     "editor.lineHeight": 17,
     "editor.fontWeight": "normal",
+    "editor.fontFamily": "Source Code Pro",
     
     "editor.trimAutoWhitespace": false,
     "editor.minimap.enabled": false,
@@ -35,7 +36,7 @@
     
     "code-runner.saveAllFilesBeforeRun": true,
     "code-runner.executorMap": {
-        "cpp": "~/compile/olymp-stuff/cpp/cpprunner.sh $dir $fileNameWithoutExt ~/compile/run",
+        "cpp": "~/compile/cp-stuff/cpp/cpprunner.sh $dir $fileNameWithoutExt ~/compile/run",
         "python": "python3 -u"
     },
     "code-runner.ignoreSelection": true,
@@ -48,7 +49,7 @@
     "cph.general.useShortCodeForcesName": true,
     "cph.general.autoShowJudge": false,
     "cph.language.cpp.Command": "g++",
-    "cph.language.cpp.Args": "-std=c++20 -O2",
+    "cph.language.cpp.Args": "-std=c++23 -O2 -DCPHTEST",
     
     
     //colors theme: Nord + Nord Deep
@@ -69,5 +70,7 @@
             "editorBracketHighlight.foreground6": "#88c0d0",
             "editorBracketHighlight.unexpectedBracket.foreground": "#bf616a"
         }
-    }
+    },
+    "editor.inlineSuggest.enabled": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": true
 }
